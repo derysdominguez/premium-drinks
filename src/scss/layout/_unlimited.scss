@@ -1,0 +1,100 @@
+
+    .unlimited{
+        position: relative;
+
+        @include mobile{height: 25rem;}
+        @include tablet{height: 40rem;}
+
+        @include desktop{height: 100vh;}
+
+        background: linear-gradient(to top, rgba(255,255,255,0), white), url('../img/unlimited-back.jpg') ;
+        background-size: 100%;
+
+        .unlimited-container{
+            height: 100%;
+            color: white;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            div{
+                height: auto;
+                // @include mobile{height: 10rem;}
+                background-color: rgba(0, 0, 0, 0.795);
+                flex-grow: 0;
+                flex-shrink: 1;
+                
+                
+                @include mobile{margin-top: 10rem;}
+                @include tablet{margin-top: 20rem;}
+                @include desktop{margin-top: 0px;}
+                
+
+
+                // flex-basis: 300px;
+                border-radius: 5%;
+                h1{font-size: 2.5rem;}
+
+                @include mobile{
+                    h1{font-size: 1.5rem;}
+                    h2{font-size: 0.8rem;}
+                    h3{font-size: 1rem;}
+                    img{height: 5rem;}
+                }
+
+                h3{color: $blue;}
+                a{text-decoration: none; color: #fff;}
+            }
+        }
+
+        table{
+            height: 100%;
+            padding: 10px 20px;
+            margin-left: 10%;
+            @include mobile{
+                padding: 10px 5px;
+                margin-left: 5%;
+            }
+
+            h1, h2, h3{
+                font-family: $Fuente_grande;
+                text-align: start;
+                @include no-margin;
+            }
+            td{
+                @include mobile{padding: 0px 1rem;}
+                @include tablet{padding: 0px 3rem;}
+                @include desktop{padding: 0px 0rem;}
+            }
+        }
+    }
+
+    .inclusions{
+
+        .container{
+            margin: 10vh 0px;
+
+            .text{margin: 5vh 0px;}
+
+            h1{font-size: 4.5em;}
+            h2{font-size: 2em;}
+
+            h1, h2{
+                font-family: $Fuente_grande;
+                @include no-margin;
+            }
+            .link{
+                background-color: $blue;
+                padding: 1rem 0px;
+                a{
+                    font-size: 3em;
+                    color: white;
+                    text-decoration: none;
+                    padding: 1%;
+                    font-size: 16px;
+                }
+            }
+        }
+    }

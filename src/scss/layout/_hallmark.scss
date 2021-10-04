@@ -1,0 +1,59 @@
+    .hallmark{
+
+        background-image: url(../img/hallmark-fondo.jpg);
+        padding: 5rem 0px;
+
+        
+        p, h1, img, iframe{
+            @include margin-med;
+        }
+
+        p{
+            @include tablet{
+                padding: 0rem 4rem;
+            }
+
+            @include mobile{
+                padding: 0rem 1rem;
+                font-size: 1.8rem;
+                @include no-margin;
+            }
+            font-size: 2rem;
+            line-height: 4rem;
+            color: #fff;
+        }
+        
+        h1{
+            font-size: 4.5rem;
+            padding-bottom: 5px;
+            border-bottom: 1px solid gray;
+            @include mobile{
+                font-size: 3rem;
+                border-bottom: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            @include tablet{border-bottom: none;}
+
+        }
+    
+        .video{
+            
+
+            height: 40.5rem;
+            width: 72rem;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: url('../img/video1.jpg');
+            background-size: 100%;
+
+            @include mobile{
+                width: 35rem;
+                height: auto;
+                background-size: 100%;
+            }
+        }
+    }

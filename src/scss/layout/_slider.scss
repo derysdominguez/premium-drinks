@@ -1,0 +1,96 @@
+    .slider-container{
+        position: relative;
+        
+        @include mobile{height: 30rem;}
+        @include tablet{height: 65rem;}
+        @include desktop{height: 75rem;}
+
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        color: #fff;
+
+        
+
+        .description{
+            position: absolute;
+            height: 25vh;
+
+            background: rgb(0,0,0);
+            background: radial-gradient(rgba(0, 0, 0, 0.637) 10%, rgba(0,212,255,0) 70%);
+            bottom: 0px;
+            h1, h3{
+                padding-top: 20px;
+                margin: auto;
+            }
+            
+            .title{
+                height: 20vh;
+            }
+
+            .details{
+
+                position: relative;
+                height: 5vh;
+                padding-top: 10px;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.812);
+                color: #fff;
+
+                img{
+                    width: 15px;
+                    height: 15px;
+                    right: 0px;
+                    margin-top: -22px;
+                    margin-left: 5px;
+                }
+            }
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next, .swiper-button-prev{
+          margin: 0px 10vw;
+          color: white;
+      }
+      .swiper-pagination{
+        position: relative;
+        margin-top: 5vh;
+        color: rgb(150, 150, 150);
+        font-size: 25px;
+      }
+

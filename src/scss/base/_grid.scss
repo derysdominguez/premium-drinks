@@ -1,0 +1,26 @@
+
+
+@include desktop {
+    @for $i from 1 through 12{
+        .cols-l-#{$i} {
+            width: $i * (100%/12);
+        }
+    }
+}
+
+@include tablet {
+    @for $i from 1 through 12{
+        .cols-m-#{$i} {
+            width: $i * (100%/12);
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 1 through 12{
+        .cols-s-#{$i} {
+            width: $i * (100%/12);
+        }
+    }
+}
+

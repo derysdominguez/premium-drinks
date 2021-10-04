@@ -1,0 +1,36 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: OpenSans-Regular;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.blue-text{color: $blue;}
+.orange-text{color: $orange;}
+.gray-text{color: $gray;}
+
+@font-face { font-family: Good Foot; src: url('https://www.mediafont.com/storage/contents/9340/font.eot'); /* IE */ src: local('Good Foot'), url('https://www.mediafont.com/storage/contents/9340/goodfoot.ttf'); /* non-IE */ }
+
+@for $i from 1 through 3 {
+    h#{$i} {
+        font-family: $Fuente_grande;
+        // margin: 0 0 $Separacion / 2 0;
+        font-weight: 900;
+        text-align: center;
+    }
+}

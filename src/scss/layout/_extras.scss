@@ -1,0 +1,108 @@
+    .extras{
+        display: flex;
+        @include mobile{display: block;}
+        margin-top: 15vh;
+
+        .extras-container{
+            display: block;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+
+            .liquors{
+                position: relative;
+                width: 35rem;
+                height: 35rem;
+                overflow: hidden;
+                border-radius: 50%;
+                border:5px solid $blue;
+
+                .text{
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                    position: absolute;
+                    background-color: $blue;
+                    margin-top: 20px;
+                    font-size: 1.5em;
+                    padding: 0.3rem;
+
+                    p{
+                        color: #fff;
+                        @include no-margin;
+                    }
+                }
+
+                img{
+                    width: auto;
+                    height: 100%;
+                    margin-left: 0px;
+                }
+                .centered{
+                    margin-left: -20px;
+                }
+            }
+
+            .description{
+                width: 35rem;
+                height: 25rem;
+                text-align: center;
+                margin-top: -6rem;
+
+
+                .text, .logo{
+                    position: relative;
+                    z-index: 3;
+                    width: 100%;
+                    
+                    h1{
+                        font-size: 2.5rem;;
+                        line-height: 2.5rem;
+                        @include no-margin;
+                    }
+                }
+
+                p{
+                    font-size: 1.4rem;
+                }
+                img{
+                    width: 20rem;
+                }
+
+                a{
+                    font-size: 1.5rem;
+
+                    text-decoration: none;
+                    color: #000;
+
+                    i{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .medio-circulo{
+                position:relative;
+                // background: linear-gradient(rgb(223, 222, 222) 0.1%, white 50%);
+                background:linear-gradient( rgba(237, 237, 237, 0.75),rgba(237, 237, 237, 0.95) 20%,rgb(255, 255, 255) 40%);;
+                opacity: 80%;
+                width:35rem;
+                height:27rem;
+                border-radius:50% 50%;
+                margin-top: -30rem;
+                z-index: 1;
+
+            }
+            .medio-circulo::after {
+                position:absolute;
+                content:"";
+                height:50%;
+                background-Color:#fff;
+                border:1px solid #fff;
+                top:50%;
+                left:0;
+                width:100%;
+            }
+            
+        }
+    }

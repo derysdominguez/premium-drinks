@@ -1,0 +1,35 @@
+@mixin mobile {
+    @media (min-width: #{$mobile}) and (max-width: #{$Tablet - 1}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$Tablet}) and (max-width: #{$Desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$Desktop}) {
+        @content;
+    }
+}
+
+@mixin grid($Columnas, $Espaciado) {
+    display: grid;
+    gap: $Espaciado;
+    grid-template-columns: repeat($Columnas, 1fr);
+}
+
+@mixin no-margin {
+    margin: 0;
+}
+
+@mixin no-padding {
+    padding: 0;
+}
+
+@mixin margin-med {
+    margin: 5vh 0px;
+}

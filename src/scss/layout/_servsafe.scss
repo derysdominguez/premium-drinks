@@ -1,0 +1,120 @@
+    
+    .servsafe{
+        @include mobile{padding: 0px;}
+        padding: 3rem 0px;
+
+        @include mobile{height: 80rem;}
+        @include tablet{height: 55rem;}
+        @include desktop{height: 42rem;}
+
+        p{            
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .container{
+            
+            @include mobile{height: 80rem;}
+            @include tablet{height: 50rem;}
+            @include desktop{height: 36rem;}
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+
+            .row{
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+
+                .info{
+                    @include mobile{text-align: center;}
+
+                    @include desktop{text-align: left;}
+
+                    :first-child{
+                        color: $blue;
+                    }
+                    h1{
+                        @include mobile{text-align: center;}
+    
+                        @include desktop{text-align: start;}
+
+                        font-size: 5rem;
+                        @include no-margin;
+                        line-height: 5rem;
+                    }
+                    
+                    padding: 0px 5rem;
+                }
+
+                .black-box{
+
+
+                    @include tablet{
+                        width: 80%;
+                        height: 20rem;
+                    }
+
+                    @include desktop{
+                        width: 26rem;
+                        height: 32rem;
+                    }
+                        
+                    background-color: rgb(34, 33, 33);
+                    padding: 1rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                    .content{
+                        height: 30rem;
+                        padding: 1rem;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        @include tablet{
+                            height: 18rem;
+                            padding: 2rem;
+                            flex-wrap: nowrap;
+                        }
+                        
+                        @include desktop{
+                            height: 30rem;
+                            padding: 1rem;
+                            flex-wrap: wrap;
+
+                        }
+
+                        border: 2px solid rgb(233, 233, 233);
+
+                        align-content: center;
+                        justify-content: center;
+                        @include no-margin;
+    
+                        img{
+                            @include mobile{width: 80%;}
+                            @include tablet{
+                                width: 22rem;
+                                height: 11rem;
+                            }
+                            @include desktop{width: 80%;}
+                            
+                        }
+
+                        p{
+                            font-size: 1.4rem;
+                            color: rgb(233, 233, 233);
+
+                            @include mobile{text-align: center;}
+                            @include tablet{text-align: left;}
+                            @include desktop{text-align: center;}
+                        }
+                    }
+                }
+            }
+        }    
+    }

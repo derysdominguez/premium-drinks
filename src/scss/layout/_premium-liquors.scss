@@ -1,0 +1,85 @@
+    .premium{
+
+        padding-top: 8rem;
+        background-image: url('../img/premium-liquors.jpg');
+
+        @include mobile{
+            height: 110rem;
+            background-size: 95rem 140rem;
+            background-position-y: 0rem;
+            background-position-x: center;
+        }
+        @include tablet{
+            height: 110rem;
+            background-size: 100% 130rem;
+            background-position-y: 0px;
+        }
+        @include desktop{
+            height: 150rem;
+            background-size: 100% 176rem;
+            background-position-y: -100px;
+        }
+
+        h1{
+            font-size: 5em;
+            padding-bottom: 5px;
+            color: #fff;
+        }
+
+        h2{
+            
+            font-size: 2rem;
+            color: #fff;
+        }
+        h1,h2{
+            @include no-margin;
+        }
+
+        h3{
+            font-size: 2em;
+        }
+
+        img{            
+            @include mobile{
+                height: 40rem;
+                width: auto;
+            }
+
+            width: 45rem;
+            height: 60rem;
+            box-shadow: 0px 0px 10px #888;
+        }
+        
+        span.star{
+            
+            @include mobile{font-size: 1.3rem;}
+            @include tablet{font-size: 2rem;}
+            @include desktop{font-size: 2rem;}
+
+            padding:0px;
+            margin: 0px;
+        }
+
+        .star::before{ 
+            transform: translateX(-105%);
+            background: linear-gradient(90deg ,transparent,$orange);
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 1px;
+            margin-top: 1rem;
+        }
+
+        .star::after{ 
+            transform: translateX(5%);
+            background: linear-gradient(90deg ,$orange,transparent);
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 1px;
+            margin-top: 1rem;
+        }
+    }
+
+
+
