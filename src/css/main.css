@@ -743,10 +743,16 @@ header .blue-header .container .row .right-content i {
 
 .cocktails {
   display: flex;
+  margin: 5rem 5rem;
 }
 @media (min-width: 200px) and (max-width: 767px) {
   .cocktails {
     display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .cocktails {
+    margin: 5rem 0px;
   }
 }
 .cocktails .cocktail-container {
@@ -756,6 +762,33 @@ header .blue-header .container .row .right-content i {
   align-content: center;
   margin: 3rem 0px;
   height: 26rem;
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .cocktails .cocktail-container {
+    margin: 5rem 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .cocktails .cocktail-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.cocktails .cocktail-container p {
+  font-size: 1.5rem;
+  position: absolute;
+  margin-top: 28rem;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .cocktails .cocktail-container p {
+    margin-left: 8rem;
+  }
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .cocktails .cocktail-container p {
+    margin-left: 10rem;
+  }
 }
 .cocktails .cocktail-container .back-image1 {
   width: 26rem;
@@ -787,6 +820,36 @@ header .blue-header .container .row .right-content i {
   border-radius: 50%;
   background-position-y: 0px;
 }
+.cocktails .cocktail-container .back-image4 {
+  width: 26rem;
+  height: 26rem;
+  background: url("../img/Drinks4.png");
+  background-size: auto 26rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-position-y: 0px;
+}
+.cocktails .cocktail-container .back-image5 {
+  width: 26rem;
+  height: 26rem;
+  background: url("../img/Drinks5.png");
+  background-size: auto 26rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-position-y: 0px;
+}
+.cocktails .cocktail-container .back-image6 {
+  width: 26rem;
+  height: 26rem;
+  background: url("../img/Drinks6.png");
+  background-size: auto 26rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-position-y: 0px;
+}
 .cocktails .cocktail-container .gradient {
   position: relative;
   background: white;
@@ -812,6 +875,24 @@ header .blue-header .container .row .right-content i {
   position: relative;
   margin-top: -8rem;
   height: 11rem;
+}
+.cocktails .cocktail-container .front-image4 {
+  position: relative;
+  margin-top: -7.5rem;
+  margin-left: -6rem;
+  height: 10rem;
+}
+.cocktails .cocktail-container .front-image5 {
+  position: relative;
+  margin-top: -14.659rem;
+  margin-left: -9rem;
+  height: 1.6rem;
+}
+.cocktails .cocktail-container .front-image6 {
+  position: relative;
+  margin-top: -11.1rem;
+  margin-left: -6rem;
+  height: 9rem;
 }
 .cocktails .cocktail-container .cktail {
   position: relative;
